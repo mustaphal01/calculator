@@ -24,7 +24,7 @@ body {
     background: #f8f8f8; /* Light gray background */
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
+    width: 400%;
     max-width: 300px;
     margin: 0 auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -48,6 +48,7 @@ form .display {
     display: flex;
     justify-content: flex-end;
     margin: 15px 0;
+    flex: 1;
 }
 
 form .display input {
@@ -58,10 +59,10 @@ form .display input {
 }
 
 form input.equal {
-    width: 100%;
-    margin-top: 10px;
+    width: 45%;
     background: #dfe6eb; /* Light blue background on tap/press */
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px; /* Larger padding for touch */
 }
 
 form input.operator {
@@ -70,27 +71,13 @@ form input.operator {
 
 /* Footer Styles */
 footer {
-    padding: 10px 0;
+    padding-top: 25px;
     text-align: center;
     color: #6d8c9e;
     font-size: 13px;
     font-weight: 600;
 }
 
-/* ... Previous CSS ... */
-
-.calculator form input {
-    /* ... Previous styles ... */
-    padding: 15px; /* Larger padding for touch */
-}
-
-form input.equal {
-    /* ... Previous styles ... */
-    padding: 15px; /* Larger padding for touch */
-}
-
-form input:active,
-form input:focus {
-    background-color: #dfe6eb; /* Subtle background change on tap/press */
-    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.05);
+@media (max-width: 600px) {
+    /* Remove or comment out the responsive styles within this media query */
 }
