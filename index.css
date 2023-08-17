@@ -58,7 +58,12 @@ form .display input {
     font-size: 32px;
     box-shadow: none;
 }
-
+form input.clr {
+    width: 45%;
+    background: #dfe6eb; /* Light blue background on tap/press */
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px; /* Larger padding for touch */
+}
 form input.equal {
     width: 45%;
     background: #dfe6eb; /* Light blue background on tap/press */
@@ -67,7 +72,7 @@ form input.equal {
 }
 
 form input.operator {
-    color: #6d8c9e; /* Subtle teal */
+    color: rgb(210, 100, 100); /* Subtle teal */
 }
 
 /* Footer Styles */
