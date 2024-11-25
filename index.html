@@ -54,13 +54,21 @@
             </form>
 
             <footer>
-                <p>&copy; [MGL] 2023.</p>
+                <p>&copy; [MGL] <span id="currentYear"></span></p>
             </footer>
         </div>
         
     </div>
 
-
+<script>
+       function updateCopyrightYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        }
+        
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', updateCopyrightYear);
+</script>
 
 </body>
 </html>
